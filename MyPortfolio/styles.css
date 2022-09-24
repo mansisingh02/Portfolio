@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/*root main element*/
+*{
+    margin: 0px;
+    padding: 0 px;
+    font-family: "Poppins",sans-serif;
+}
+
+header{
+    /*position: fixed; for position of header to be fixed, note that here we cant do tnhat since the content goes behind that then*/
+    width: 100%;
+    display: flex;/*aligns the anchor tag and all the contents of the navbar horizontally*/
+    justify-content : space-between;/* to space them, one should on the left, one should be on the right, since this alone wont work, you need to specify the width*/
+    padding: 13px 5 px;
+    background-color: #0f0c27; /*for the header region*/
+    color: white;
+    border-bottom: solid 0.2px grey;
+
+}
+
+.navbar{ /*the class navbar*/
+    display: flex;
+    margin-left: 10px; /*since we need to have some spacing*/
+    justify-content: space-between;
+    width: 40%;
+    list-style:none;
+    padding-top: 33px;
+    margin-right: 20px;
+
+}
+
+header a{ /*the anchor tag in header is being referenced*/
+    color: white;
+    text-decoration: none;
+}
+
+.logo{ /*for the class logo*/
+    font-size: 1.8rem;
+    margin: 25px;
+    font-weight: 600;
+}
+
+ul a{ /*the anchor tag in ul*/
+    font-size: 1rem;
+}
+
+.home{
+    background-color: #0f0c27;
+    /*height: 50vh;*/
+    justify-content: space-between;
+    display: flex;
+}
+
+.social{
+    margin-left: 80px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section{
+    padding: 100px 10%;
+}
+
+.social a i{
+    font-size: 1.7rem;
+    color: white;
+    margin-top: 2.9rem;
+}
+
+.home-text{
+    color: white;
+    margin-left: 5%;
+    margin-top: 50px;
+    width:60%
+}
+
+.contact-me{
+    color: white;
+    text-decoration: none;
+    background-color: #033a80;
+    /*border-radius: 130px;*/
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 12px 15px /*for font padding in button*/
+}
+
+/*.home-img{
+    height: 400px;
+    width: 500px;
+}*/
+
+.heading-title-name{
+    font-size: 2.5rem;
+}
+
+.para-home{
+    margin: 20px 0px;
+    font-size: 1rem;
+}
+
+.about-me{
+    text-align: center;
+    background-color: #0f0c27;
+    color: white;
+    margin-top: 0%; 
+
+}
+.aboutme-section{
+    display: flex;
+    text-align: left;
+    margin-top: 50px;
+}
+.my-img{
+    border-radius: 20px;
+}
+.aboutme-text{
+    width: 50%;
+    text-align: justify;
+    justify-content: space-between;
+}
+.icons-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.img-section{
+    margin-left: 50px;
+}
+.aboutme-heading{
+    font-size:2.5rem; 
+}
+.skills{
+    text-align: center;
+    background-color: #0f0c27;
+    color: white;
+    margin-top: 0%; 
+
+}
+.skills-heading{
+    font-size:2.5rem; 
+}
+.skills-subheading{
+    font-size:1.5rem;
+    margin-top: 5%;
+    text-align: center;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.projects{
+    background-color: #0f0c27;
+    color: white;
+    text-align: center;
+  }
+.project-heading{
+    font-size:2.5rem;
+    margin-bottom: 30px;
+}
+.projects-img{
+    border-radius: 20px;
+    margin: 5px 5px;
+}
+.contact-form{
+    background-color: #0f0c27;
+    color: white;
+    text-align: center;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form input, textarea{
+    border-radius:  10px;
+    margin-bottom: 10px;
+    background-color: #150b3a;
+    text-decoration: none;
+    border:0;
+    color: white;
+}
+.contact-me-heading{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.submit{
+    margin-top:20px;
+    width: 20%;
+    background-color: #033a80;
+    color: white;
+    padding: 10px 15px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100vh;
+  }
+  
+  body {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input {
+    -webkit-appearance: none;
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+    background-size: cover;
+    border-radius: 50px;
+    outline: none;
+    transition: background-image .90s;
+    box-shadow: 0px 2px 5px 1px gray;
+  }
+  
+  input:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: navy;
+    border-radius: 50px;
+    transition: all .9s;
+    background-color: #F7CA33;
+  }
+  
+  input:checked {
+    background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+    transition: background-image .90s;
+  
+  }
+  
+  input:checked:before {
+    transform: translate(100%);
+    transition: all .9s;
+    background-color: #ECF0F3;
+  }

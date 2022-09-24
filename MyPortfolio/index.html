@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mansi Singh</title>
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!--Navbar-->
+        <header>
+            <a href="a" class="logo">Mansi Singh</a>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <!--<li><a href="">Expertise</a></li>-->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-form">Contacts</a></li>
+                <div><!--<i class='bx bx-moon'></i>--><!--bx means the box icon, for moon which will be used for day and night mode-->
+                  <li><input type="checkbox"></li></div> 
+            </ul>
+        </header>
+
+        <!--Home-->
+        <section class="home" id="home"> <!--to segregate sections-->
+             <div class="social"> <!--for social media handles-->
+                <a href=""><i class='bx bxl-github'></i></a>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+                <a href=""><i class='bx bxl-linkedin'></i></a>
+             </div>
+
+             <div class="home-text">
+              <span>Hello, I'm</span>
+
+              <h1 class="heading-title-name">Mansi Singh</h1>
+
+              <span>Upcoming Software Developer Engineer</span>
+
+              <p class="para-home">A motivated individual,  aiming to solve a plethora of problems through basic problem solving and coding skills</p>
+
+              <section class="contact-me" id="contact">
+              <div class="contact-me-text">Contact Me
+             </div>
+            </section>
+
+             <div class="home-img">
+                <img src="/images/monu.png" alt="mansi-image" srcset="github">
+             </div>
+        </section>
+
+        <!--About Me-->
+        <section class="about-me" id="about-me">
+           <h1 class="aboutme-heading">About Me</h1>
+           <span>Introduction</span>
+          <div class="aboutme-section"><!--Since we donot want diaply flex for headers-->
+          <div class="img-section">
+            <img src="/images/monu2.jpg" alt="mansi-image" class="my-img"> 
+           </div>
+           <div class="aboutme-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare, ipsum ac condimentum efficitur, sapien leo aliquet nibh, ac accumsan enim ante ac ligula. Morbi eget sagittis urna. Aenean placerat orci sapien, laoreet rutrum urna imperdiet vitae. Morbi sed nisl a enim scelerisque feugiat. Donec vitae condimentum urna. Pellentesque ut libero eu nisi accumsan mollis. Sed magna est, scelerisque cursus leo a, vestibulum dapibus nisi. </p>
+            <div class="icons-div">
+            <span><i class="bx bxs-user"></i>Mansi Singh</span>
+            <span><i class="bx bxs-phone"></i>+91 935 817 4109</span>
+            <span><i class="bx bxs-envelope"></i>mansiisinghh02@gmail.com</span>
+          </div>
+          <a href="#contact" class="contact-me">Download CV</a>
+           </div>
+          </div>
+        </section>
+
+        <!--Skills-->
+        <section class="skills" id="skills">
+          <h1 class="skills-heading">Skills</h1>
+          <span class="skill-subheading">My Skills</span>
+          <div class="row">
+            <div class="column"> 
+              <img src="" alt="HTML" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="" alt="Css" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="" alt="Java" style="width:100%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="" alt="Javascript" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="" alt="Microservices" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="" alt="SQL" style="width:100%">
+            </div>
+          </div>
+          </section>
+
+          <!--Projects-->
+          <section class="projects" id="projects">
+            <h1 class="project-heading">Projects</h1>
+          <span class="skill-subheading">My Projects</span>
+            <img class="projects-img" src="" alt="project-one" height="300px" width="400px">
+            <img class="projects-img" src="" alt="project-two" height="300px" width="400px">
+            <img class="projects-img" src="" alt="project-three" height="300px" width="400px">
+            <img class="projects-img" src="" alt="project-four" height="300px" width="400px">
+            <img class="projects-img" src="" alt="project-five" height="300px" width="400px">
+            <img class="projects-img" src="" alt="project-six" height="300px" width="400px">
+          </section>
+
+          <!--Contact Me-->
+          <section class="contact-form" id="contact-form">
+            <h1 class="contact-me-heading">Contact Me</h1>
+            <form action="mailto:mansiisinghh02@gmail.com" class="form">
+              <input type="text" name="Your name" id="name" placeholder="Your name">
+              <input type="text" name="Email ID" id="Email" placeholder="Email ID">
+              <textarea name="Type your message here" id="message" cols=50px row=10px placeholder="Type your message here"></textarea>
+              <button class="submit">Send</button>
+            </form>
+          </section>
+  </body>
+</html>
